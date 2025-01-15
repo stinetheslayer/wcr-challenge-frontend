@@ -8,7 +8,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClientModule, HttpClient, HttpHeaders } from '@angular/common/http';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
 @Component({
@@ -30,13 +29,11 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
   isLoading = false;
-  splineUrl!: SafeResourceUrl;
 
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    private http: HttpClient,
-    private sanitizer: DomSanitizer
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {
@@ -51,7 +48,7 @@ export class LoginComponent implements OnInit {
     const formData = this.loginForm.value;
 
     const headers = new HttpHeaders({
-      'x-api-key': "I'M_A_FRONTEND_DEVELOPER_AND_I_WANT_TO_JOIN_THE_TEAM" // Replace with your actual API key
+      'x-api-key': "I'M_A_FRONTEND_DEVELOPER_AND_I_WANT_TO_JOIN_THE_TEAM" 
     });
 
     this.http.post('http://localhost:3030/auth/login', formData, { headers }).subscribe({
@@ -60,7 +57,7 @@ export class LoginComponent implements OnInit {
         // Store the response (e.g., JWT) in localStorage
         // localStorage.setItem('userToken', response.token); // Assuming your API returns a token
         
-        this.router.navigate(['/signup']); // Change
+        this.router.navigate(['']); // Change
       },
       error: (error: any) => {
         console.error('Login failed:', error);

@@ -6,6 +6,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    .spline-viewer {
+      width: 100%;
+      height: 200px; /* Adjust height as needed */
+       /* Space between the viewer and the welcome text */
+      
+    }
   
     h1 {
       font-family: 'Rokkitt', serif;
@@ -17,6 +24,7 @@
     mat-form-field {
       width: 100%;
       margin-bottom: 16px;
+      
     }
   
     .or-divider {
@@ -32,18 +40,6 @@
       width: 100%;
       margin-bottom: 8px;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
     .login-link {
       font-family: 'Rokkitt', serif;
       text-align: center;

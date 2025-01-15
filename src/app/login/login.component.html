@@ -1,43 +1,49 @@
 <ion-content>
-    <div class="login-container">
-      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/LGcGB1NBV46zVSTq/scene.splinecode"></spline-viewer>
-      <h1>Welcome Back Racer!</h1>
-      <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
-        <mat-form-field appearance="fill">
-          <mat-label>Email</mat-label>
-          <input matInput formControlName="email" />
-        </mat-form-field>
-  
-        <mat-form-field appearance="fill">
-          <mat-label>Password</mat-label>
-          <input matInput type="password" formControlName="password" />
-        </mat-form-field>
-  
-        <div class="forgot" (click)="forgotPassword()">
-          Forgot Password?
-        </div>
-  
-        <button mat-raised-button color="primary" type="submit">
-          Login
-        </button>
-      </form>
-  
-      <div class="or-divider">OR</div>
-  
-      <button mat-raised-button color="accent" type="button" class="social-button" >
-        <img src="assets/G-logo.png" alt="Google" style="height: 20px; margin-right: 8px;" />
-        Continue With Google
-      </button>
-      <button mat-raised-button color="warn" type="button" class="social-button" >
-        <img src="assets/F-logo.png" alt="Facebook" style="height: 20px; margin-right: 8px;" />
-        Continue With Facebook
-      </button>
-  
-      <div class="signup-link">
-        Are you a new ? 
-        <span (click)="goToSignup()">Sign Up</span>
+  <div class="login-container">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+    
+    <spline-viewer 
+      url="https://prod.spline.design/LGcGB1NBV46zVSTq/scene.splinecode" 
+      class="spline-viewer"
+      interaction="rotation">
+    </spline-viewer>
+    
+    <h1>Welcome Back Racer!</h1>
+    
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" />
+      </mat-form-field>
+
+      <div class="forgot" (click)="forgotPassword()">
+        Forgot Password?
       </div>
+
+      <button mat-raised-button color="primary" type="submit">
+        Login
+      </button>
+    </form>
+
+    <div class="or-divider">OR</div>
+
+    <button mat-raised-button color="accent" type="button" class="social-button" >
+      <img src="assets/G-logo.png" alt="Google" style="height: 20px; margin-right: 8px;" />
+      Continue With Google
+    </button>
+    <button mat-raised-button color="warn" type="button" class="social-button" >
+      <img src="assets/F-logo.png" alt="Facebook" style="height: 20px; margin-right: 8px;" />
+      Continue With Facebook
+    </button>
+
+    <div class="signup-link">
+      Are you a new ? 
+      <span (click)="goToSignup()">Sign Up</span>
     </div>
-  </ion-content>
-  
+  </div>
+</ion-content>

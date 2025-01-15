@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonContent } from '@ionic/angular/standalone';
 import { MatButtonModule } from '@angular/material/button';
-import { Router } from '@angular/router'; // We’ll use this to navigate
+import { Router } from '@angular/router'; 
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonContent } from '@ionic/angular/standalone';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,6 +14,7 @@ import { HttpClientModule, HttpClient, HttpHeaders } from '@angular/common/http'
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css'],
   standalone: true,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     IonContent,
     MatButtonModule,
@@ -59,13 +60,13 @@ export class SignupComponent implements OnInit {
       'x-api-key': "I'M_A_FRONTEND_DEVELOPER_AND_I_WANT_TO_JOIN_THE_TEAM"
     });
 
-    // Remove the rePassword field before sending
+    // Removing the rePassword field before sending
     const { rePassword, ...postData } = formData;
 
     this.http.post('http://localhost:3030/auth/register', postData, { headers }).subscribe({
       next: (response: any) => {
         console.log('Signup successful:', response);
-        // Optionally, you can log in the user automatically or redirect to login
+        // redirect to login
         this.router.navigate(['/login']);
       },
       error: (error: any) => {

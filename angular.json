@@ -38,7 +38,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"
+              
             ]
           },
           "configurations": {

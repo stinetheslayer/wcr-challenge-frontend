@@ -1,13 +1,11 @@
 ion-content {
   --background: linear-gradient(to bottom, #d10000, #4d0000);
-  /* If IonContent automatically scrolls, you can try removing any extra padding */
 }
 
-/* A full-viewport container so we can absolutely-position children inside */
 .welcome-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Force a full screen for more reliable positioning */
+  height: 100vh; 
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -19,12 +17,9 @@ ion-content {
   bottom: 0;
   left: 0;
   width: 100%;
-  /* This “height” can be changed if you need more/less black area */
   height: 30vh;
   background-color: black;
   z-index: 1;
-
-  /* Big arch shape (play with these radii to get the exact curve you want) */
   border-top-left-radius: 100% 50%;
   border-top-right-radius: 100% 50%;
 }
@@ -34,28 +29,27 @@ ion-content {
   position: absolute;
   top: 5%;
   left: 50%;
-  transform: translateX(-70%);
-  z-index: 2; /* Above background, behind racer if needed */
+  transform: translateX(-65%);
+  z-index: 2;
 
-  /* Make it scale with viewport width to be nice and big */
+ 
   width: 500vw;
-  max-width: 600px; /* A cap for tablet/desktop so it doesn’t get TOO big */
+  max-width: 600px; 
 }
 
 .car-image img {
-  width: 120vw;
+  width: 110vw;
   height: 100%;
 }
 
-/* Racer near the black overlay, large, overlapping it */
+
 .racer-image {
   position: absolute;
-  bottom: 30%; /* So it sits “into” the black area a bit */
-  left: 50%;
+  bottom: 30%; 
+  left: 52%;
   transform: translateX(-60%);
-  z-index: 3; /* Above the black overlay */
+  z-index: 3; 
 
-  /* Also scale with viewport width */
   width: 80vw;
   max-width: 450px;
 }
@@ -65,47 +59,39 @@ ion-content {
   height: 100vw;
 }
 
-/* Logo in the black area, above the racer’s head but below the buttons */
+
 .logo-container {
   position: absolute;
-  bottom: 21%; /* Adjust so it sits roughly in that arch area */
+  bottom: 22%; 
   left: 50%;
-  transform: translateX(-55%);
-  z-index: 4; /* Above the racer if you want, or below—your call */
+  transform: translateX(-51%);
+  z-index: 4; 
 }
 
 .logo-container img {
-  width: 130px;
+  width: 120px;
   height: auto;
 }
 
-/* Buttons near the bottom inside the black overlay */
+
 .button-container {
-  position: absolute;
-  bottom: 5%;
-  left: 18%;
-  
+  position: absolute; 
+  bottom: 8%; 
+  left: 50%; 
+  transform: translateX(-50%); 
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  z-index: 5; /* Make sure they’re on top */
+  flex-direction: column; 
+  gap: 10px; 
+  z-index: 5; 
+  width: 70%;
 }
 
-button {
-  width: 200%;
-  max-width: 250px;
-  height: 50px;
-  font-size: 1rem;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  font-family: 'Arial', sans-serif;
-}
 
 /* Primary button style */
 button:first-child {
-  background: linear-gradient(to right, #d10000, #4d0000);;
+  background: linear-gradient(to right, #d10000, #4d0000);
   color: white;
+  
 }
 
 /* Secondary button style */
@@ -114,11 +100,8 @@ button:last-child {
   color: #800000;
 }
 
-button:hover {
-  opacity: 0.9;
-}
 
-/* If you want them even bigger in portrait mode specifically */
+
 @media (orientation: portrait) {
   .car-image {
     width: 85vw;
