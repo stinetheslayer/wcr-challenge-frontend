@@ -1,0 +1,7 @@
+{
+  "name": "WCR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

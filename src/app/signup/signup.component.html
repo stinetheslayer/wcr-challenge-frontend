@@ -1,0 +1,52 @@
+<ion-content>
+    <div class="signup-container">
+      <h1>Become a Racer</h1>
+      <form [formGroup]="signupForm" (ngSubmit)="onSignupSubmit()">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastname" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Re-Password</mat-label>
+          <input matInput type="password" formControlName="repassword" />
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit">
+          Sign Up
+        </button>
+      </form>
+  
+      <div class="or-divider">OR</div>
+  
+      <button mat-raised-button color="accent" type="button" class="social-button" >
+        <img src="assets/G-logo.png" alt="Google" style="height: 20px; margin-right: 8px;" />
+        Continue With Google
+      </button>
+      <button mat-raised-button color="warn" type="button" class="social-button" >
+        <img src="assets/F-logo.png" alt="Facebook" style="height: 20px; margin-right: 8px;" />
+        Continue With Facebook
+      </button>
+  
+      <div class="login-link">
+        Are you already a racer ? 
+        <span (click)="goToLogin()">Log in</span>
+      </div>
+    </div>
+  </ion-content>
+  

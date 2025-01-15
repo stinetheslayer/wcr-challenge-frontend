@@ -1,0 +1,61 @@
+.signup-container {
+    min-height: 100%;
+    padding: 16px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    h1 {
+      font-family: 'Rokkitt', serif;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  
+    mat-form-field {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  
+    .or-divider {
+      font-family: 'Rokkitt', serif;
+      text-align: center;
+      margin: 16px 0;
+    }
+  
+    button {
+      font-size: 14;
+      font-family: 'Rokkitt', serif;
+      color: #fff;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    .login-link {
+      font-family: 'Rokkitt', serif;
+      text-align: center;
+      margin-top: 16px;
+  
+      span {
+        color: #1e88e5;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
