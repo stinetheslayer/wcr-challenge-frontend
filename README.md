@@ -14,8 +14,11 @@ A mobile application built using Material Design 3, Angular 19, Ionic, Capacitor
 
 ## Features
 
+### Inspired by WCR Website Design
+The application draws inspiration from the established WCR Website. It adopts the color scheme and title font, Rokkitt, from Material Design 3—nearly identical to the font used on the website—to create a consistent visual identity.
+
 ### Interactive Spline Animation
-An engaging 3D animation integrated on the Welcome page using Spline.
+An engaging 3D animation integrated on the Login & Signup page using Spline.
 
 ### Tabbed Authentication
 - **Sign Up Tab:** New user registration with Google and Facebook SSO styled buttons.
@@ -25,7 +28,7 @@ An engaging 3D animation integrated on the Welcome page using Spline.
 Simplified integration for user authentication via provided Swagger endpoints.
 
 ### Responsive Design
-Adheres to Material Design 3 guidelines for a clean, responsive UI. Created using Rokkitt Font from Material Design 3 package.
+Adheres to Material Design 3 guidelines for a clean, responsive UI.
 
 ### Cross-Platform Support
 Ensured through Ionic and CapacitorJS for seamless performance on both iOS and Android.
@@ -160,6 +163,9 @@ Currently after a successful sign-up returns to the login page and after a succe
 
 # Resources & Credits
 
+### WECANRACE Website
+### Material Design 3 Guidelines
+### Figma
 ### Angular Documentation
 ### Angular Material
 ### Ionic Framework
