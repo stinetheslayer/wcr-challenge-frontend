@@ -55,8 +55,8 @@ Dockerized environment for easy deployment and consistency across different setu
 ### Local Development Setup
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/homayoun43salimi/welcome-page-app.git
-    cd welcome-page-app
+    git clone https://github.com/homayoun43salimi/wcr-challenge-frontend.git
+    cd wcr-challenge-frontend
     ```
 
 ### Docker Deployment
