@@ -163,6 +163,7 @@ May vary across devices, particularly on older models with limited hardware capa
 ### WECANRACE Website
 ### Material Design 3 Guidelines
 ### Figma
+https://www.figma.com/design/cZF1amxpx8sVcWnkg3rODq/Untitled?node-id=0-1&t=g7Zjmuc08hNeW7WI-1
 ### Angular Documentation
 ### Angular Material
 ### Ionic Framework
@@ -170,4 +171,11 @@ May vary across devices, particularly on older models with limited hardware capa
 ### Spline
 ### Swagger API Documentation
 ### ChatGPT & Gemini
+https://chatgpt.com/share/6788c31d-6aa0-8006-a09d-08b38fe67647
+https://gemini.google.com/app/3cabbe085f7ac9ac
+https://gemini.google.com/app/a14f75c619fcc32c
+https://gemini.google.com/app/40e3606adcafa955
+https://gemini.google.com/app/dd6a16600e265f1e
+
+
 
