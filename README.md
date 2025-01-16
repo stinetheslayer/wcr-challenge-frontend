@@ -1,6 +1,6 @@
 # WCR Challenge Front-end
 
-Inspired by the established WCR website, our app maintains a consistent visual identity by adopting the site's color scheme and title font, Rokkitt from Material Design 3. This design choice mirrors the website’s look and feel, ensuring brand continuity across platforms.
+Inspired by the established WCR website, this app maintains a consistent visual identity by adopting the site's color scheme and title font, Rokkitt from Material Design 3. This design choice mirrors the website’s look and feel, ensuring brand continuity across platforms.
 
 Built with modern technologies—Angular 19, Ionic, and CapacitorJS—and fully Dockerized, the mobile application adheres to Material Design 3 principles for a clean and responsive interface. It features engaging interactive 3D Spline animations and intuitive tabbed authentication flows for Sign Up and Login. Leveraging Angular Material components, the app delivers a seamless cross-platform experience on both iOS and Android devices.
 
