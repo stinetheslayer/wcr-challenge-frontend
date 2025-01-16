@@ -113,7 +113,7 @@ ng serve
 
 Then visit http://localhost:4200 to test your app
 
-> ⚠️ **Warning:** Please ensure that the back-end docker is always online while running front-end docker
+> ⚠️ **Warning:** Ensure the back-end Docker container is running before starting the front-end container to guarantee proper functionality.
 
 
 ## Implementation Details
