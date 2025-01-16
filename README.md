@@ -1,6 +1,8 @@
 # WCR Challenge Front-end
 
-A mobile application built using Material Design 3, Angular 19, Ionic, CapacitorJS, and fully Dockerized. It features a welcoming interface with interactive Spline animation and tabbed authentication flows (Sign Up / Login), leveraging Angular Material components for a seamless cross-platform experience on iOS and Android.
+Inspired by the established WCR website, our app maintains a consistent visual identity by adopting the site's color scheme and title font, Rokkitt from Material Design 3. This design choice mirrors the website’s look and feel, ensuring brand continuity across platforms.
+
+Built with modern technologies—Angular 19, Ionic, and CapacitorJS—and fully Dockerized, the mobile application adheres to Material Design 3 principles for a clean and responsive interface. It features engaging interactive 3D Spline animations and intuitive tabbed authentication flows for Sign Up and Login. Leveraging Angular Material components, the app delivers a seamless cross-platform experience on both iOS and Android devices.
 
 ## Table of Contents
 - [Features](#features)
@@ -13,9 +15,6 @@ A mobile application built using Material Design 3, Angular 19, Ionic, Capacitor
 - [Resources & Credits](#resources--credits)
 
 ## Features
-
-### Inspired by WCR Website Design
-The application draws inspiration from the established WCR Website. It adopts the color scheme and title font, Rokkitt, from Material Design 3—nearly identical to the font used on the website—to create a consistent visual identity.
 
 ### Interactive Spline Animation
 An engaging 3D animation integrated on the Login & Signup page using Spline.
