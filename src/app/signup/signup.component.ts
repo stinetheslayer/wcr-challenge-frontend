@@ -66,11 +66,13 @@ export class SignupComponent implements OnInit {
     this.http.post('http://localhost:3030/auth/register', postData, { headers }).subscribe({
       next: (response: any) => {
         console.log('Signup successful:', response);
+        alert('signup successful!');
         // redirect to login
         this.router.navigate(['/login']);
       },
       error: (error: any) => {
         console.error('Signup failed:', error);
+        alert('signup failed!');
         // Handle signup error (e.g., display error message)
       }
     }).add(() => {

@@ -61,7 +61,7 @@ export class LoginComponent implements OnInit {
       },
       error: (error: any) => {
         console.error('Login failed:', error);
-        alert('Login failed!, please try again');
+        alert('Login failed! please try again');
       }
     }).add(() => {
       this.isLoading = false;

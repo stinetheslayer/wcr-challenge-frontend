@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router'; 
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',

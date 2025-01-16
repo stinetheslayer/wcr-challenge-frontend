@@ -32,16 +32,13 @@ ion-content {
   position: relative;
   width: 100%;
 }
-/* Car near the top, fairly large in portrait */
+
 .car {
-  max-width: 100%;
+  max-width: 600px;
   height: auto;
   object-fit: contain;
   z-index: 2;
 }
-
-
-
 
 .racer {
   position: absolute;
@@ -49,11 +46,8 @@ ion-content {
   max-width: 90%;
   height: auto;
   object-fit: contain;
-  transform: translateY(90%); /* Adjust position to align racer closer to car */
+  transform: translateY(90%); 
 }
-
-
-
 
 .logo-container {
   position: absolute;
