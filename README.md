@@ -14,8 +14,11 @@ A mobile application built using Material Design 3, Angular 19, Ionic, Capacitor
 
 ## Features
 
+### Inspired by WCR Website Design
+The application draws inspiration from the established WCR Website. It adopts the color scheme and title font, Rokkitt, from Material Design 3—nearly identical to the font used on the website—to create a consistent visual identity.
+
 ### Interactive Spline Animation
-An engaging 3D animation integrated on the Welcome page using Spline.
+An engaging 3D animation integrated on the Login & Signup page using Spline.
 
 ### Tabbed Authentication
 - **Sign Up Tab:** New user registration with Google and Facebook SSO styled buttons.
@@ -73,6 +76,9 @@ Dockerized environment for easy deployment and consistency across different setu
 #### Frontend
 1. **Build the Docker Image of Frontend:**
     - Navigate to the Frontend folder within the cloned repository.
+   ```bash
+   npm run build
+   ```
     ```bash
     docker build -t wcr-challenge-fe .
     ```
@@ -82,7 +88,8 @@ Dockerized environment for easy deployment and consistency across different setu
     ```
 
 ### Usage and Docs
-Find Back-end in : https://github.com/WECANRACE/wcr-challenge-backend
+Find Back-end in : 
+https://github.com/WECANRACE/wcr-challenge-backend
 
 
 **API KEY:**
@@ -110,13 +117,13 @@ Then visit http://localhost:4200 to test your app
 > ⚠️ **Warning:** Please ensure that the back-end docker is always online while running front-end docker
 
 
-### Implementation Details
+## Implementation Details
 
-## Interactive Animation
+### Interactive Animation
 The animation component (located in src/app/components.ts) uses Spline’s API to embed and control a 3D interactive animation on the Welcome page.
 
-## Tabbed Authentication Section
-Utilizing Angular Material Tabs located in src/app/login & src/app/signup, the application offers:
+### Tabbed Authentication Section
+#### Utilizing Angular Material Tabs located in src/app/login & src/app/signup, the application offers:
 
 Two tabs: "Sign Up" and "Login".
 Each tab contains a form for user input and Google/Facebook SSO styled buttons.
@@ -127,31 +134,43 @@ The AuthService abstracts HTTP calls to the Swagger API endpoints, managing logi
 
 # Dependency Rationale
 
-Angular & Angular Material: Provide a structured framework and pre-built UI components adhering to Material Design 3, reducing the need for custom UI work.
-Ionic & CapacitorJS: Facilitate cross-platform mobile development, allowing the Angular web app to run natively on iOS and Android.
-Spline: Enhances the user experience with modern, interactive 3D animations without requiring heavy custom code.
-Docker: Ensures consistency across development, testing, and production environments, simplifying deployment.
+### Angular & Angular Material: 
+Provide a structured framework and pre-built UI components adhering to Material Design 3, reducing the need for custom UI work.
+### Ionic & CapacitorJS:
+Facilitate cross-platform mobile development, allowing the Angular web app to run natively on iOS and Android.
+### Spline: 
+Enhances the user experience with modern, interactive 3D animations without requiring heavy custom code.
+### Docker: 
+Ensures consistency across development, testing, and production environments, simplifying deployment.
 
 # Simplification Techniques
 
-Leveraged Angular Material components to minimize custom UI code.
-Integrated Swagger APIs directly using Angular’s HTTP client, reducing complexity in API integration.
-Employed Docker to encapsulate environment dependencies, eliminating local setup issues.
-Used Ionic components and CapacitorJS to streamline mobile compatibility, avoiding the need for separate codebases.
+#### Leveraged Angular Material components to minimize custom UI code.
+#### Integrated Swagger APIs directly using Angular’s HTTP client, reducing complexity in API integration.
+#### Employed Docker to encapsulate environment dependencies, eliminating local setup issues.
+#### Used Ionic components and CapacitorJS to streamline mobile compatibility, avoiding the need for separate codebases.
 
 # Known Issues & Limitations
 
-SSO Buttons: Currently non-functional stubs; they are styled to match Google and Facebook branding but do not perform actual OAuth flows.
-Swagger Integration: Simplified; advanced error handling, token management, and security considerations are minimal.
-Animation Performance: May vary across devices, particularly on older models with limited hardware capabilities.
+### SSO Buttons: 
+Currently non-functional stubs; they are styled to match Google and Facebook branding but do not perform actual OAuth flows.
+### Swagger Integration: 
+Simplified; advanced error handling, token management, and security considerations are minimal.
+### Animation Performance: 
+May vary across devices, particularly on older models with limited hardware capabilities.
+### Notification For Successful and Unsuccessful Login, Sign-up:
+Currently after a successful sign-up returns to the login page and after a successful login returns to the sign-up page.
 
 # Resources & Credits
 
-Angular Documentation
-Angular Material
-Ionic Framework
-CapacitorJS
-Spline
-Swagger API Documentation
-ChatGPT & Gemini
+### WECANRACE Website
+### Material Design 3 Guidelines
+### Figma
+### Angular Documentation
+### Angular Material
+### Ionic Framework
+### CapacitorJS
+### Spline
+### Swagger API Documentation
+### ChatGPT & Gemini
 
