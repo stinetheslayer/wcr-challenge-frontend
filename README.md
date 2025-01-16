@@ -25,7 +25,7 @@ An engaging 3D animation integrated on the Welcome page using Spline.
 Simplified integration for user authentication via provided Swagger endpoints.
 
 ### Responsive Design
-Adheres to Material Design 3 guidelines for a clean, responsive UI.
+Adheres to Material Design 3 guidelines for a clean, responsive UI. Created using Rokkitt Font from Material Design 3 package.
 
 ### Cross-Platform Support
 Ensured through Ionic and CapacitorJS for seamless performance on both iOS and Android.
