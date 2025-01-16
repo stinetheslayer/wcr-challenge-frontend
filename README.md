@@ -157,8 +157,6 @@ Currently non-functional stubs; they are styled to match Google and Facebook bra
 Simplified; advanced error handling, token management, and security considerations are minimal.
 ### Animation Performance: 
 May vary across devices, particularly on older models with limited hardware capabilities.
-### Notification For Successful and Unsuccessful Login, Sign-up:
-Currently after a successful sign-up returns to the login page and after a successful login returns to the sign-up page.
 
 # Resources & Credits
 
