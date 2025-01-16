@@ -73,6 +73,9 @@ Dockerized environment for easy deployment and consistency across different setu
 #### Frontend
 1. **Build the Docker Image of Frontend:**
     - Navigate to the Frontend folder within the cloned repository.
+   ```bash
+   npm run build
+   ```
     ```bash
     docker build -t wcr-challenge-fe .
     ```
@@ -82,7 +85,8 @@ Dockerized environment for easy deployment and consistency across different setu
     ```
 
 ### Usage and Docs
-Find Back-end in : https://github.com/WECANRACE/wcr-challenge-backend
+Find Back-end in : 
+https://github.com/WECANRACE/wcr-challenge-backend
 
 
 **API KEY:**
