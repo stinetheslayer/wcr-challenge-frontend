@@ -38,7 +38,7 @@ Dockerized environment for easy deployment and consistency across different setu
 ## Technologies & Dependencies
 
 - **Angular 19:** Application framework.
-- **Angular Material 18:** UI components following Material Design 3 guidelines.
+- **Angular Material 19:** UI components following Material Design 3 guidelines.
 - **Ionic & CapacitorJS:** Cross-platform mobile compatibility.
 - **Spline:** For creating interactive 3D web animations.
 - **Docker:** Containerization for deployment.
