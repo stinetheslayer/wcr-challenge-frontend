@@ -56,11 +56,12 @@ export class LoginComponent implements OnInit {
         console.log('Login successful:', response);
         // Store the response (e.g., JWT) in localStorage
         // localStorage.setItem('userToken', response.token); // Assuming your API returns a token
-        
+        alert('Log-in successful!');
         this.router.navigate(['']); // Change
       },
       error: (error: any) => {
         console.error('Login failed:', error);
+        alert('Login failed!, please try again');
       }
     }).add(() => {
       this.isLoading = false;

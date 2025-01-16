@@ -23,41 +23,36 @@ ion-content {
   border-top-left-radius: 100% 50%;
   border-top-right-radius: 100% 50%;
 }
-
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
 /* Car near the top, fairly large in portrait */
-.car-image {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-65%);
+.car {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
   z-index: 2;
-
- 
-  width: 500vw;
-  max-width: 600px; 
-}
-
-.car-image img {
-  width: 110vw;
-  height: 100%;
 }
 
 
-.racer-image {
+
+
+.racer {
   position: absolute;
-  bottom: 30%; 
-  left: 52%;
-  transform: translateX(-60%);
-  z-index: 3; 
-
-  width: 80vw;
-  max-width: 450px;
+  bottom: 0;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  transform: translateY(90%); /* Adjust position to align racer closer to car */
 }
 
-.racer-image img {
-  width: 80vw;
-  height: 100vw;
-}
+
 
 
 .logo-container {
@@ -102,11 +97,8 @@ button:last-child {
 
 
 
-@media (orientation: portrait) {
-  .car-image {
-    width: 85vw;
-  }
-  .racer-image {
-    width: 65vw;
-  }
-}
+
+
+
+
+
