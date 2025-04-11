@@ -34,7 +34,9 @@ ion-content {
 }
 
 .car {
-  max-width: 600px;
+  max-width: 90vw;
+  min-width: 10vw;
+  width: 400px;
   height: auto;
   object-fit: contain;
   z-index: 2;
@@ -43,10 +45,10 @@ ion-content {
 .racer {
   position: absolute;
   bottom: 0;
-  max-width: 90%;
+  max-width: 90vw;
   height: auto;
   object-fit: contain;
-  transform: translateY(90%); 
+  transform: translateY(95%); 
 }
 
 .logo-container {

@@ -1,7 +1,12 @@
 {
-  "name": "WCR",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
+    "name": "wcr-challenge-frontend",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "angular",
+    "serve": {
+        "platform": "browser",
+        "host": "localhost",
+        "port": 8100
+    }
 }
